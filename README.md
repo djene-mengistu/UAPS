@@ -48,7 +48,7 @@ Download datasets. There are 4 datasets to download:
 * KoSDD2 (KolektorSDD2) dataset from [KoSDD2](https://www.vicos.si/resources/kolektorsdd2/)
 
 Put downloaded data into the following directory structure:
-* data/
+* .../data/
     * NEU_data/ ... # raw data of NEU-Seg
     * DAGM_data/ ...# raw data of DAGM
     * MTiles_data/ ...# raw data of MTiles
@@ -60,7 +60,7 @@ To train the proposed **UAPS** method run the following after setting hyperparam
 python UAPS_train.py
 ```
 
-To test the performance of the proposed method:
+To test the performance of the proposed method, load the trained weights accordingly and run the following:
 ```bash
 run UAPS_Testing.ipynb
 ```
