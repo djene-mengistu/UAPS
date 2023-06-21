@@ -23,6 +23,20 @@ The baseline architecture and the perterbation method is presented as follows:
 
 **Fig. 3:** Illustration of baseline architecture adapted from U-Net with perturbation module. The encoder output remains unchanged at each block, while the type of perturbation changes to produce different versions of the outputs to be fed to the decoder networks.
 
+# Full paper source:
+You can read the details about the methods, implementation, and results from: (https://ieeexplore.ieee.org/document/9994033)
+
+**Please cite ourwork as follows:**
+```
+@article{sime2022semi,
+  title={Semi-Supervised Defect Segmentation with Pairwise Similarity Map Consistency and Ensemble-Based Cross-Pseudo Labels},
+  author={Sime, Dejene M and Wang, Guotai and Zeng, Zhi and Wang, Wei and Peng, Bei},
+  journal={IEEE Transactions on Industrial Informatics},
+  year={2022},
+  publisher={IEEE}
+}
+```
+
 ## Python >= 3.6
 PyTorch >= 1.1.0
 PyYAML, tqdm, tensorboardX
