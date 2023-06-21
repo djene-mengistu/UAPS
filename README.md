@@ -109,7 +109,7 @@ Results from different model settings are presented as follows:
  
 ## Acknowledgment
 
-This repo borrowed many implementations from [SSL4MIS](https://github.com/HiLab-git/SSL4MIS)
+This repo borrowed many implementations from [SSL4MIS](https://github.com/HiLab-git/SSL4MIS) and [simEps](https://github.com/djene-mengistu/simEps/tree/main)
 
 ## Contact
 For any issue please contact me at djene.mengistu@gmail.com
