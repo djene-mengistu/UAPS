@@ -28,12 +28,13 @@ You can read the details about the methods, implementation, and results from: (h
 
 **Please cite ourwork as follows:**
 ```
-@article{sime2022semi,
-  title={Semi-Supervised Defect Segmentation with Pairwise Similarity Map Consistency and Ensemble-Based Cross-Pseudo Labels},
-  author={Sime, Dejene M and Wang, Guotai and Zeng, Zhi and Wang, Wei and Peng, Bei},
-  journal={IEEE Transactions on Industrial Informatics},
-  year={2022},
-  publisher={IEEE}
+@article{sime2023uncertainty-aware,
+  title={Uncertainty-aware and dynamically-mixed pseudo-labels for semi-supervised defect segmentation},
+  author={Sime, Dejene M and Wang, Guotai and Zeng, Zhi and Peng, Bei},
+  journal={Computers in Industry},
+  Volume 152,
+  year={2023},
+  publisher={Elsevier}
 }
 ```
 
