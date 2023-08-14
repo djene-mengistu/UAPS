@@ -34,6 +34,8 @@ You can read the details about the methods, implementation, and results from: (h
   journal={Computers in Industry},
   Volume 152,
   year={2023},
+  issn = {0166-3615},
+  doi = {https://doi.org/10.1016/j.compind.2023.103995},
   publisher={Elsevier}
 }
 ```
