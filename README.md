@@ -24,7 +24,7 @@ The baseline architecture and the perterbation method is presented as follows:
 **Fig. 3:** Illustration of baseline architecture adapted from U-Net with perturbation module. The encoder output remains unchanged at each block, while the type of perturbation changes to produce different versions of the outputs to be fed to the decoder networks.
 
 # Full paper source:
-You can read the details about the methods, implementation, and results from: (https://ieeexplore.ieee.org/document/9994033)
+You can read the details about the methods, implementation, and results from: (https://www.sciencedirect.com/science/article/pii/S0166361523001458)
 
 **Please cite ourwork as follows:**
 ```
