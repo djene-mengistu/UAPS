@@ -28,15 +28,16 @@ You can read the details about the methods, implementation, and results from: (h
 
 **Please cite ourwork as follows:**
 ```
-@article{sime2023uncertainty-aware,
-  title={Uncertainty-aware and dynamically-mixed pseudo-labels for semi-supervised defect segmentation},
-  author={Sime, Dejene M and Wang, Guotai and Zeng, Zhi and Peng, Bei},
-  journal={Computers in Industry},
-  Volume 152,
-  year={2023},
-  issn = {0166-3615},
-  doi = {https://doi.org/10.1016/j.compind.2023.103995},
-  publisher={Elsevier}
+@article{SIME2023103995,
+title = {Uncertainty-aware and dynamically-mixed pseudo-labels for semi-supervised defect segmentation},
+journal = {Computers in Industry},
+volume = {152},
+pages = {103995},
+year = {2023},
+issn = {0166-3615},
+doi = {https://doi.org/10.1016/j.compind.2023.103995},
+url = {https://www.sciencedirect.com/science/article/pii/S0166361523001458},
+author = {Dejene M. Sime and Guotai Wang and Zhi Zeng and Bei Peng},
 }
 ```
 
