@@ -1,6 +1,27 @@
 # Uncertainty-aware and Dynamically-mixed Pseudo-labels for Semi-supervised Defect Segmentation (UAPS)
+## 📌 Overview
 In this study, we propose a novel uncertainty-aware pseudo labels, which are generated from dynamically mixed predictions of multiple decoders that leverage a shared encoder network. The estimated uncertainty guides the pseudo-label-based supervision and regularizes the training when using the unlabeled samples. In our experiments on four public datasets for defect segmentation, the proposed method outperformed the fully supervised baseline and six state-of-the-art semi-supervised segmentation methods. We also conducted an extensive ablation study to demonstrate the effectiveness of our approach in various settings.
 
+## 🚀 Full paper source:
+You can read the details about the methods, implementation, and results from: (https://www.sciencedirect.com/science/article/pii/S0166361523001458)
+
+⭐ [Please Star this repo](https://github.com/djene-mengistu/UAPS)
+
+🔥 If you find it useful, **also cite our work as follows:**
+```
+@article{SIME2023103995,
+title = {Uncertainty-aware and dynamically-mixed pseudo-labels for semi-supervised defect segmentation},
+journal = {Computers in Industry},
+volume = {152},
+pages = {103995},
+year = {2023},
+issn = {0166-3615},
+doi = {https://doi.org/10.1016/j.compind.2023.103995},
+url = {https://www.sciencedirect.com/science/article/pii/S0166361523001458},
+author = {Dejene M. Sime and Guotai Wang and Zhi Zeng and Bei Peng},
+}
+```
+## 🔥 Challenges
 The illustration of the uncertainty map and error is presented as follows:
 <p align="center">
 <img src="/fig_data/uncertainty.jpg" width="40%" height="10%">
@@ -9,6 +30,7 @@ The illustration of the uncertainty map and error is presented as follows:
 **Fig. 1:** Illustration of the network prediction, prediction error which is false negatives and false positives, and the uncertainty map computed as the KL-distance between primary
 decoder and average predictions.
 
+## 🏗️ The UAPS Frameworks 
 The overall architecture of the proposed method is presented as follows:
 <p align="center">
 <img src="/fig_data/main-arch.jpg" width="60%" height="40%">
@@ -23,28 +45,7 @@ The baseline architecture and the perterbation method is presented as follows:
 
 **Fig. 3:** Illustration of baseline architecture adapted from U-Net with perturbation module. The encoder output remains unchanged at each block, while the type of perturbation changes to produce different versions of the outputs to be fed to the decoder networks.
 
-# Full paper source:
-You can read the details about the methods, implementation, and results from: (https://www.sciencedirect.com/science/article/pii/S0166361523001458)
-
-**Please cite ourwork as follows:**
-```
-@article{SIME2023103995,
-title = {Uncertainty-aware and dynamically-mixed pseudo-labels for semi-supervised defect segmentation},
-journal = {Computers in Industry},
-volume = {152},
-pages = {103995},
-year = {2023},
-issn = {0166-3615},
-doi = {https://doi.org/10.1016/j.compind.2023.103995},
-url = {https://www.sciencedirect.com/science/article/pii/S0166361523001458},
-author = {Dejene M. Sime and Guotai Wang and Zhi Zeng and Bei Peng},
-}
-```
-
-## Python >= 3.6
-PyTorch >= 1.1.0
-PyYAML, tqdm, tensorboardX
-## Data Preparation
+## 🧠 Data Preparation
 Download datasets. There are 4 datasets to download:
 * NEU-SEG dataset from [NEU-seg](https://ieeexplore.ieee.org/document/8930292)
 * DAGM dataset from [DAGM](https://www.kaggle.com/datasets/mhskjelvareid/dagm-2007-competition-dataset-optical-inspection)
@@ -57,7 +58,7 @@ Put downloaded data into the following directory structure:
     * DAGM_data/ ...# raw data of DAGM
     * MTiles_data/ ...# raw data of MTiles
     * KoSDD2_data/ ...# raw data of KoSDD2
-## Code usage
+## 📌 Code usage
 The training files and settings for each compared network is presented in separate directory. Train each network and test from the presented directory.
 To train the proposed **UAPS** method run the following after setting hyperparameters such as labeled-ratio, iteration-per-epoch, consistency ramp length, and consistency loss coefficients.
 ```bash
@@ -70,7 +71,8 @@ run UAPS_Testing.ipynb
 ```
 
 Similarly, train the proposed method, **UAPS**, for the other datasets from the indicated directories after setting appropriate hyper-parametres.
-## Some results and visualizations
+
+## 🌱 Some results and visualizations
 Visualization of the segmetnation results on selected samples are presented as follows:
 <p align="center">
 <img src="/fig_data/neu-viz.jpg" width="60%" height="50%">
@@ -84,36 +86,9 @@ Visualization of the segmetnation results on selected samples are presented as f
 
 **Fig. 5:** Visualization of the segmentation results on the MTiles dataset.
 
-## Ablation experiments
-Results from different model settings are presented as follows:
-<p align="center">
-<img src="/fig_data/loss-effects.jpg" width="40%" height="20%">
-</p>
+## 🤝 Acknowledgments
 
-**Fig. 6:** Effects of different loss combinations.
+This repo borrowed many implementations from [simEps](https://github.com/djene-mengistu/simEps)
 
-<p align="center">
-<img src="/fig_data/effects_of_loss_coef.jpg" width="40%" height="20%">
-</p>
-
-**Fig. 7:** Effects of loss coefficents.
-
-<p align="center">
-<img src="/fig_data/dynamic-mixing.jpg" width="40%" height="20%">
-</p>
-
-**Fig. 8:** Proposed dynamic-mixing vs. Averaging to generate pseudo-labels.
-
-<p align="center">
-<img src="/fig_data/decoder-effect.jpg" width="40%" height="20%">
-</p>
-
-**Fig. 9:** Effects of number of auxuliary decoders on segmentation performance and inference time.
-
- 
-## Acknowledgment
-
-This repo borrowed many implementations from [SSL4MIS](https://github.com/HiLab-git/SSL4MIS) and [simEps](https://github.com/djene-mengistu/simEps/tree/main)
-
-## Contact
+## 📬 Contact
 For any issue please contact me at djene.mengistu@gmail.com
